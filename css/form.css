@@ -1,15 +1,32 @@
 form{
     display: inline-block;
+    width: 100%;              
+    float: left;
+                   
 }
     .form-row{
         display: inline-block;
+        width: 100%;                    
+        margin-bottom: 30px;                                 
     }
-        .btn{
-
+        .form-row:last-of-type{
+            margin-bottom: 0;
         }
-        span{
-
-        }
-        a{
+        label{
             display: inline-block;
+            width: 100%;
+            margin-bottom: 10px;
+            color: gray;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        input{
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+            line-height: 30px;
+            color: #333;
+            border: none;
+            border-bottom: 2px solid grey;
         }

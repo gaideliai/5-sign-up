@@ -1,16 +1,23 @@
 body{
-    background-image: url("../img/background.png");
-    height: 100%;
-    background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    /* filter: blur(10px); */
+    background-color: teal;
 }
+    .background{
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../img/background.png");
+        background-size: cover;
+        filter: blur(10px);
+        background-position: center;
+        }
     .container{
         display: inline-block;
         width: 800px;
-        margin-top: 80px;
-        margin-left: calc( (100% - 800px) / 2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
     }
         .left{
             display: inline-block;
@@ -18,93 +25,74 @@ body{
             width: 40%;
             background-image: url("../img/background.png");
             background-repeat: no-repeat;
-            height: 100%;
+            /* height: 100%; */
             background-size: cover;
             color: white;
+            position: absolute;
+            padding: 40px;
         }
             h1{
                 display: inline-block;
                 width: 100%;
-                padding: 20px;
+                /* padding: 20px; */
+                font-weight: 300;
+                text-transform: capitalize;
             }
             footer{
                 display: inline-block;
                 width: 100%;
-                padding: 20px;
+                /* padding: 20px; */
             }
-                a{
+                footer > a{
                     display: inline-block;
+                    color: white;
                 }
-                span{}
+                footer > span{
+                    display: inline-block;                   
+                }
 
         .right{
             display: inline-block;
             width: 60%;
-            float: left;
+            float: right;
             background-color: white;
             padding: 60px;
         }
-            .x{
+            .x{               
                 display: inline-block;
-                float: right;
-            } 
-
-            form{
-                display: inline-block;
-                width: 100%;              
-                float: left;
-                               
+                height: 60px;
+                width: 60px;
+                position: absolute;
+                top: 0;
+                right: 0;              
+                /* margin-left: 360px;
+                margin-top: -60px; */
+                font-size: 30px;
+                line-height: 56px;
+                text-align: center;
+                color: grey;
             }
-                .form-row{
-                    display: inline-block;
-                    width: 100%;                    
-                    margin-bottom: 30px;                                 
-                }
-                    .form-row:last-of-type{
-                        margin-bottom: 0;
-                    }
-                    label{
-                        display: inline-block;
-                        width: 100%;
-                        margin-bottom: 5px;
-                        color: gray;
-                        text-transform: uppercase;
-                        font-size: 14px;
-                        line-height: 20px;
-                    }
-                    input{
-                        display: inline-block;
-                        width: 100%;
-                        font-size: 18px;
-                        line-height: 28px;
-                        border: none;
-                        border-bottom: 2px solid grey;
-                    }
-                    .btn{
-                        display: inline-block;
+            .form-row > *{
+                display: inline-block;
+                float: left;
+                padding: 5px;
+                font-size: 18px;
+                line-height: 28px;
+            }
+                    .btn{                      
+                        padding-left: 50px;
+                        padding-right: 50px;
                         background-color: #0252DB;
                         color: white;
-                        border-radius: 20px;
-                        padding: 5px;
-                        padding-left: 30px;
-                        padding-right: 30px;
-                        font-size: 18px;
-                        line-height: 28px;
                         cursor: pointer;
+                        border-radius: 15px; 
                     }
-                    span{
-                        display: inline-block;
+                    .form-row > span{                        
                         margin-left: 20px;                        
-                        padding: 5px;
-                        font-size: 18px;
-                        line-height: 28px;
                     }
-                    a{
-                        display: inline-block;
-                        padding-top: 5px;
+                    .form-row > a{                        
                         color: #0252DB;
                         font-size: 18px;
                         line-height: 28px;
                         text-decoration: none;
-
                     }
